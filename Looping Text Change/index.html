@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Text Change</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .animate-words {
+            animation: animateWords 5s infinite ease;
+        }
+
+        @keyframes animateWords {
+            0% {transform: translateY(0%);}
+            25% {transform: translateY(-100%);}
+            50% {transform: translateY(-200%);}
+            75% {transform: translateY(-300%);}
+            100% {transform: translateY(-400%);}
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-0 m-0 text-white font-sans" style="background: conic-gradient(from 45deg, #121212, #181818, #0A0A0A);">
+    <h1 class="text-[3.5em] leading-none font-bold">
+        HI I'M A 
+        <span class="relative inline-block text-[rgb(253,75,11)] h-[1.25em] align-bottom overflow-hidden">
+            <span class="block animate-words">CODER</span>
+            <span class="block animate-words">DEVELOPER</span>
+            <span class="block animate-words">PROGRAMMER</span>
+            <span class="block animate-words">LEARNER</span>
+            <span class="block animate-words">STUDENT</span>
+        </span>
+    </h1>
+</body>
+</html>
